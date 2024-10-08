@@ -7,9 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * Hello world!
- */
 public class App {
     public static void main(String[] args) {
 
@@ -18,7 +15,7 @@ public class App {
         String dbPassword = "Moremore";
 
         String createTable = "CREATE TABLE IF NOT EXISTS hello_jdbc (id INT PRIMARY KEY, message VARCHAR(255))";
-        String insertDate = "INSERT INTO hello_jdbc (id, message) VALUES (1, 'Hello JDBC!'),\n" + "(2, 'Super Homework!')";
+        String insertDate = "INSERT INTO hello_jdbc (id, message) VALUES (3, 'Hello JDBC!'),\n" + "(4, 'Super Homework!')";
         String selectQuery = "SELECT * FROM hello_jdbc";
 
         PGSimpleDataSource dataSource = new PGSimpleDataSource();
